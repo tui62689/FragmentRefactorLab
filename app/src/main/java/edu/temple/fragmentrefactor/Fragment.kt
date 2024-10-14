@@ -19,6 +19,7 @@ class Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_, container, false)
+
         val displayTextView = view.findViewById<TextView>(R.id.displayTextView)
         val nameEditText = view.findViewById<EditText>(R.id.nameEditText)
         val changeButton = view.findViewById<Button>(R.id.changeButton)
@@ -32,7 +33,8 @@ class Fragment : Fragment() {
                 "Please enter your name"
             }
         }
-        return inflater.inflate(R.layout.fragment_, container, false)
+
+        return view
     }
 
 
